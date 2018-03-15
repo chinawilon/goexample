@@ -64,7 +64,7 @@ func main() {
 				writes <- write
 				<-write.resp
 				atomic.AddUint64(&writeOps, 1)
-				time.Sleep(time.Millisecond)
+				//time.Sleep(time.Millisecond)
 			}
 		}()
 	}
